@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
+import Image from 'next/image'
+import Me from '../public/me.png'
 
 //import GlitchedWriter from 'glitched-writer'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
@@ -13,6 +15,7 @@ export default function Hero({}: Props) {
     "Hi, My Name is Kirstie !",
     "<Creative Developer />",
     "Woman-Who-Codes.tsx",
+    "Mother of Dragons",
     "Writing.The.Future.",
     ],
     loop: true,
@@ -22,8 +25,8 @@ export default function Hero({}: Props) {
 return (
 <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
     <BackgroundCircles />
-    <img
-    className="relative rounded-full h-32 w-32 mx-auto object-cover" src='https://i.postimg.cc/pXyjnVWV/me.png' alt='my photo' />
+    <Image
+    className="relative rounded-full h-32 w-32 mx-auto object-cover" src={Me} alt='A professional photography of Kirstie Goggans' />
     
     <div className='z-20'>
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Engineer</h2>
