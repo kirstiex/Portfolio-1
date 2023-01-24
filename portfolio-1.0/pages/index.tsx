@@ -6,6 +6,7 @@ import WorkExperience from '../components/WorkExperience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -50,6 +51,14 @@ export default function Home() {
       <Contact/>
     </section>
     
+    <Link href="#hero">
+    <footer className='sticky bottom-5 w-full cursor-pointer'>
+      <div className='flex items-center justify-center'>
+        <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0
+        cursor-pointer' src="" alt="logo banner"/>
+      </div>
+    </footer>
+    </Link>
     </div>
   </>
   )
