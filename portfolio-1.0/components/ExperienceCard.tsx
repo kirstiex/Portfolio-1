@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Avatar from '../public/LogoAvatar.png'
 type Props = {}
 
 function ExperienceCard({}: Props) {
@@ -25,7 +27,7 @@ function ExperienceCard({}: Props) {
             <p className='font-bold text-2xl mt-1'> Kirstie</p>
             <div className='flex space-x-2 my-2'>
                 {/* Tech used */}
-                <img className='h-10 w-10 rounded-full' src='' alt=''/>
+                <Image className='h-10 w-10 rounded-full' src={Avatar} alt=''/>
             </div>
             <p className='uppercase py-5 text-gray-300' >Started working...-ended</p>
             <ul className='list-disc space-y-4 ml-5 text-lg'>

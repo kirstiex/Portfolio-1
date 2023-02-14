@@ -7,12 +7,14 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Link from 'next/link';
+import Image from 'next/image';
+import Avatar from '../public/LogoAvatar.png'
 
 
 export default function Home() {
   return (
   <>
-  <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll
+  <div className="bg-[#111] text-white h-screen snap-y snap-mandatory overflow-y-scroll
    overflow-x-hidden z-0 ">
     <Head>
       <title>Kirstie's Portfolio</title>
@@ -54,8 +56,9 @@ export default function Home() {
     <Link href="#hero">
     <footer className='sticky bottom-5 w-full cursor-pointer'>
       <div className='flex items-center justify-center'>
-        <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0
-        cursor-pointer' src="" alt="logo banner"/>
+        <Image className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
+         src={Avatar} alt="logo banner"/>   
+        
       </div>
     </footer>
     </Link>

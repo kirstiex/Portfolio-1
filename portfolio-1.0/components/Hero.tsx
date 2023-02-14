@@ -10,7 +10,9 @@ import BackgroundCircles from './BackgroundCircles';
 type Props = {}
 
 export default function Hero({}: Props) {
-  const [text,count] = useTypewriter({
+
+
+ const [text,count] = useTypewriter({
     words: [
     "Hi, My Name is Kirstie !",
     "<Creative Developer />",
@@ -26,7 +28,7 @@ return (
 <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
     <BackgroundCircles />
     <Image
-    className="relative rounded-full h-32 w-32 mx-auto object-cover" src={Me} alt='A professional photography of Kirstie Goggans' />
+    className="relative rounded-full h-32 w-32 mx-auto object-cover" src={Me} alt='A professional photograph of Kirstie Goggans' />
     
     <div className='z-20'>
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Engineer</h2>
@@ -49,5 +51,6 @@ return (
         </div>
     </div>
 </div>
+
   );
 }
